@@ -18,7 +18,7 @@ while True:
     reading = sesore_temp.read_u16() * conversion_factor
     tempurature = 27 - (reading - 0.706)/0.001721
     #print(tempurature)
-    lcd.putstr('Tempurature:\n' + str(tempurature)[0:5])
+    lcd.putstr('Temperature:\n' + str(tempurature)[0:5])
     lcd.custom_char(0, bytearray([
       0x07,
       0x05,
